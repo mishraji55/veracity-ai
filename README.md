@@ -2,6 +2,9 @@
 
 A modern, responsive multi-page website for Veracity AI, an innovative hackathon project designed to detect misinformation and help users verify the credibility of online content.
 
+## 🔗 Live Demo
+[Click Here to View the Demo](https://mishraji55.github.io/veracity-ai/)
+
 ## 🎯 Project Overview
 
 Veracity AI is a hackathon project created to combat the spread of misinformation in India and beyond. The platform provides instant, AI-powered analysis of news articles, headlines, and social media posts to help users identify potentially fake or misleading information.
