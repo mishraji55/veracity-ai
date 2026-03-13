@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify News - Veracity AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-white">
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-slate-900 bg-opacity-95 backdrop-blur-md border-b border-cyan-500 border-opacity-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent hover-lift">
+                        <i class="fas fa-shield-alt text-cyan-400"></i>
+                        <span>Veracity AI</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-1">
+                    <a href="index.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Home</a>
+                    <a href="verify.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Verify News</a>
+                    <a href="how-it-works.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">How It Works</a>
+                    <a href="learn.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Learn</a>
+                    <a href="about.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">About</a>
+                    <a href="contact.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-cyan-400 hover:text-cyan-300">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Home</a>
+                <a href="verify.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Verify News</a>
+                <a href="how-it-works.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">How It Works</a>
+                <a href="learn.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Learn</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">About</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-4 bg-gradient-to-br from-slate-900 to-slate-950">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                Verify Your News
+            </h1>
+            <p class="text-xl text-gray-300">Paste any news article, headline, or social media post and let our AI analyze its credibility.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 px-4 bg-slate-950 min-h-screen">
+        <div class="max-w-4xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Input Section -->
+                <div class="fade-in">
+                    <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20">
+                        <h2 class="text-2xl font-bold mb-6">Input Content</h2>
+                        <div class="mb-6">
+                            <label for="content-input" class="block text-lg font-semibold mb-3">Paste your content:</label>
+                            <textarea 
+                                id="content-input" 
+                                class="w-full h-64 bg-slate-800 border border-cyan-500 border-opacity-30 rounded-lg p-4 text-white focus:border-opacity-100 focus:outline-none transition-all duration-300 resize-none"
+                                placeholder="Paste a news headline, article excerpt, or social media post here...">
+                            </textarea>
+                        </div>
+                        <button 
+                            id="analyze-btn" 
+                            class="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 cursor-pointer">
+                            <i class="fas fa-wand-magic-sparkles mr-2"></i>Analyze Content
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Output Section -->
+                <div id="results-section" class="opacity-0 transition-all duration-500 fade-in">
+                    <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20">
+                        <h2 class="text-2xl font-bold mb-6">Analysis Results</h2>
+                        
+                        <!-- Credibility Score -->
+                        <div class="mb-8">
+                            <div class="flex justify-between items-center mb-3">
+                                <label class="text-lg font-semibold">Credibility Score</label>
+                                <span id="credibility-score" class="text-3xl font-bold text-cyan-400">0%</span>
+                            </div>
+                            <div class="w-full bg-slate-800 rounded-full h-3 overflow-hidden">
+                                <div id="credibility-bar" class="bg-gradient-to-r from-red-500 to-cyan-500 h-full rounded-full transition-all duration-1000" style="width: 0%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Risk Level -->
+                        <div class="mb-8">
+                            <label class="text-lg font-semibold block mb-3">Risk Level</label>
+                            <div id="risk-level" class="inline-block px-6 py-2 rounded-lg font-bold text-lg bg-green-500 bg-opacity-20 text-green-400 border border-green-500 border-opacity-50">
+                                Low Risk
+                            </div>
+                        </div>
+
+                        <!-- Breakdown -->
+                        <div class="mb-8">
+                            <h3 class="text-lg font-semibold mb-4">Score Breakdown</h3>
+                            <div class="space-y-3">
+                                <div class="bg-slate-800 p-4 rounded-lg">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-gray-300">Source Credibility</span>
+                                        <span id="source-score" class="font-bold text-cyan-400">0%</span>
+                                    </div>
+                                    <div class="w-full bg-slate-700 rounded-full h-2 overflow-hidden">
+                                        <div id="source-bar" class="bg-cyan-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-800 p-4 rounded-lg">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-gray-300">Language Analysis</span>
+                                        <span id="language-score" class="font-bold text-cyan-400">0%</span>
+                                    </div>
+                                    <div class="w-full bg-slate-700 rounded-full h-2 overflow-hidden">
+                                        <div id="language-bar" class="bg-cyan-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                                <div class="bg-slate-800 p-4 rounded-lg">
+                                    <div class="flex justify-between items-center mb-2">
+                                        <span class="text-gray-300">Factual Accuracy</span>
+                                        <span id="accuracy-score" class="font-bold text-cyan-400">0%</span>
+                                    </div>
+                                    <div class="w-full bg-slate-700 rounded-full h-2 overflow-hidden">
+                                        <div id="accuracy-bar" class="bg-cyan-500 h-full rounded-full transition-all duration-500" style="width: 0%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Summary -->
+                        <div class="bg-slate-800 p-4 rounded-lg border border-cyan-500 border-opacity-20">
+                            <h3 class="font-semibold mb-2">Summary</h3>
+                            <p id="summary-text" class="text-gray-300"></p>
+                        </div>
+
+                        <!-- Warnings -->
+                        <div id="warnings-section" class="mt-6"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sample Headlines -->
+            <div class="mt-16 fade-in">
+                <h3 class="text-2xl font-bold mb-8 text-center">Try These Sample Headlines</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                    <button class="sample-btn bg-slate-800 hover:bg-slate-700 p-4 rounded-lg border border-cyan-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 text-left">
+                        <i class="fas fa-lightbulb text-yellow-400 mr-2"></i>
+                        "Scientists discover cure for all diseases with a single ingredient"
+                    </button>
+                    <button class="sample-btn bg-slate-800 hover:bg-slate-700 p-4 rounded-lg border border-cyan-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 text-left">
+                        <i class="fas fa-lightbulb text-yellow-400 mr-2"></i>
+                        "New study shows coffee consumption linked to improved health outcomes"
+                    </button>
+                    <button class="sample-btn bg-slate-800 hover:bg-slate-700 p-4 rounded-lg border border-cyan-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 text-left">
+                        <i class="fas fa-lightbulb text-yellow-400 mr-2"></i>
+                        "Local government announces free WiFi for all citizens next month"
+                    </button>
+                    <button class="sample-btn bg-slate-800 hover:bg-slate-700 p-4 rounded-lg border border-cyan-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 text-left">
+                        <i class="fas fa-lightbulb text-yellow-400 mr-2"></i>
+                        "Tech billionaire claims AI will solve world hunger by next year"
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-cyan-500 border-opacity-20 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Veracity AI</h4>
+                    <p class="text-gray-400">Fighting misinformation with AI-powered fact checking.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a></li>
+                        <li><a href="verify.html" class="hover:text-cyan-400 transition-colors">Verify News</a></li>
+                        <li><a href="how-it-works.html" class="hover:text-cyan-400 transition-colors">How It Works</a></li>
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="learn.html" class="hover:text-cyan-400 transition-colors">Learn About Misinformation</a></li>
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Veracity AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        const analyzeBtn = document.getElementById('analyze-btn');
+        const contentInput = document.getElementById('content-input');
+        const resultsSection = document.getElementById('results-section');
+        const sampleBtns = document.querySelectorAll('.sample-btn');
+
+        // Mock analysis data
+        const mockAnalyses = [
+            {
+                credibility: 78,
+                source: 85,
+                language: 75,
+                accuracy: 73,
+                risk: 'Low Risk',
+                riskColor: 'green',
+                warnings: ['Some sensational language detected', 'Source verification recommended'],
+                summary: 'This article appears to be mostly credible. The language is generally neutral, and the sources referenced are known publications. However, some claims may need additional verification.'
+            },
+            {
+                credibility: 25,
+                source: 30,
+                language: 20,
+                accuracy: 25,
+                risk: 'High Risk',
+                riskColor: 'red',
+                warnings: ['Excessive sensationalism detected', 'Unverifiable claims', 'Unknown source credibility', 'Emotional manipulation tactics identified'],
+                summary: 'This content shows multiple red flags characteristic of misinformation. The language contains excessive sensationalism, claims are difficult to verify, and the source credibility is questionable.'
+            },
+            {
+                credibility: 88,
+                source: 92,
+                language: 87,
+                accuracy: 85,
+                risk: 'Very Low Risk',
+                riskColor: 'green',
+                warnings: [],
+                summary: 'This information appears highly credible. It comes from a reputable source, uses factual language, and claims are verifiable. This content is safe to share.'
+            }
+        ];
+
+        function analyzeContent() {
+            const content = contentInput.value.trim();
+            
+            if (!content) {
+                alert('Please enter some content to analyze');
+                return;
+            }
+
+            // Random analysis (demo purposes)
+            const analysis = mockAnalyses[Math.floor(Math.random() * mockAnalyses.length)];
+
+            // Animate results
+            resultsSection.style.opacity = '0';
+            resultsSection.style.pointerEvents = 'none';
+
+            setTimeout(() => {
+                updateResults(analysis);
+                resultsSection.style.opacity = '1';
+                resultsSection.style.pointerEvents = 'auto';
+            }, 300);
+
+            // Scroll to results
+            setTimeout(() => {
+                resultsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 500);
+        }
+
+        function updateResults(analysis) {
+            // Update credibility score
+            animateCounter('credibility-score', 0, analysis.credibility, '%');
+            animateBar('credibility-bar', analysis.credibility);
+
+            // Update component scores
+            animateCounter('source-score', 0, analysis.source, '%');
+            animateBar('source-bar', analysis.source);
+            
+            animateCounter('language-score', 0, analysis.language, '%');
+            animateBar('language-bar', analysis.language);
+            
+            animateCounter('accuracy-score', 0, analysis.accuracy, '%');
+            animateBar('accuracy-bar', analysis.accuracy);
+
+            // Update risk level
+            const riskElement = document.getElementById('risk-level');
+            riskElement.textContent = analysis.risk;
+            riskElement.className = `inline-block px-6 py-2 rounded-lg font-bold text-lg bg-${analysis.riskColor}-500 bg-opacity-20 text-${analysis.riskColor}-400 border border-${analysis.riskColor}-500 border-opacity-50`;
+
+            // Update summary
+            document.getElementById('summary-text').textContent = analysis.summary;
+
+            // Update warnings
+            const warningsSection = document.getElementById('warnings-section');
+            warningsSection.innerHTML = '';
+            if (analysis.warnings.length > 0) {
+                warningsSection.innerHTML = '<h3 class="font-semibold mb-3 text-yellow-400"><i class="fas fa-triangle-exclamation mr-2"></i>Warnings Detected</h3>';
+                analysis.warnings.forEach(warning => {
+                    const warningEl = document.createElement('div');
+                    warningEl.className = 'bg-yellow-500 bg-opacity-10 border border-yellow-500 border-opacity-30 text-yellow-300 p-3 rounded-lg mb-2';
+                    warningEl.innerHTML = `<i class="fas fa-exclamation-circle mr-2"></i>${warning}`;
+                    warningsSection.appendChild(warningEl);
+                });
+            }
+        }
+
+        function animateCounter(elementId, start, end, suffix) {
+            const element = document.getElementById(elementId);
+            const duration = 1000;
+            const increment = (end - start) / (duration / 16);
+            let current = start;
+
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= end) {
+                    element.textContent = end + suffix;
+                    clearInterval(timer);
+                } else {
+                    element.textContent = Math.round(current) + suffix;
+                }
+            }, 16);
+        }
+
+        function animateBar(elementId, width) {
+            const element = document.getElementById(elementId);
+            element.style.width = width + '%';
+        }
+
+        analyzeBtn.addEventListener('click', analyzeContent);
+
+        // Sample buttons
+        sampleBtns.forEach(btn => {
+            btn.addEventListener('click', function() {
+                contentInput.value = this.textContent.replace(/\s+/g, ' ').trim();
+                analyzeContent();
+            });
+        });
+
+        // Enter key to analyze
+        contentInput.addEventListener('keydown', function(e) {
+            if (e.ctrlKey && e.key === 'Enter') {
+                analyzeContent();
+            }
+        });
+    </script>
+</body>
+</html>

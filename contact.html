@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Veracity AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-white">
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-slate-900 bg-opacity-95 backdrop-blur-md border-b border-cyan-500 border-opacity-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent hover-lift">
+                        <i class="fas fa-shield-alt text-cyan-400"></i>
+                        <span>Veracity AI</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-1">
+                    <a href="index.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Home</a>
+                    <a href="verify.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Verify News</a>
+                    <a href="how-it-works.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">How It Works</a>
+                    <a href="learn.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Learn</a>
+                    <a href="about.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">About</a>
+                    <a href="contact.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-cyan-400 hover:text-cyan-300">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Home</a>
+                <a href="verify.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Verify News</a>
+                <a href="how-it-works.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">How It Works</a>
+                <a href="learn.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Learn</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">About</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-4 bg-gradient-to-br from-slate-900 to-slate-950">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                Get in Touch
+            </h1>
+            <p class="text-xl text-gray-300">We'd love to hear from you. Send us your feedback, questions, or partnership inquiries.</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 px-4 bg-slate-950 min-h-screen">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <!-- Contact Info Card 1 -->
+                <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 hover-lift text-center fade-in">
+                    <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-envelope text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Email</h3>
+                    <p class="text-gray-400 mb-4">hello@veracity-ai.com</p>
+                    <p class="text-gray-300 text-sm">We respond to all inquiries within 24 hours</p>
+                </div>
+
+                <!-- Contact Info Card 2 -->
+                <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 hover-lift text-center fade-in fade-in-delay-1">
+                    <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-phone text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Phone</h3>
+                    <p class="text-gray-400 mb-4">+91 (555) 123-4567</p>
+                    <p class="text-gray-300 text-sm">Available Mon - Fri, 10 AM - 6 PM IST</p>
+                </div>
+
+                <!-- Contact Info Card 3 -->
+                <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 hover-lift text-center fade-in fade-in-delay-2">
+                    <div class="w-16 h-16 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-map-marker-alt text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Location</h3>
+                    <p class="text-gray-400 mb-4">India</p>
+                    <p class="text-gray-300 text-sm">Supporting fact-checking across South Asia</p>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="max-w-2xl mx-auto fade-in">
+                <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20">
+                    <h2 class="text-3xl font-bold mb-8 text-center">Send us a Message</h2>
+                    
+                    <form id="contact-form" class="space-y-6">
+                        <!-- Name Field -->
+                        <div>
+                            <label for="name" class="block text-lg font-semibold mb-2">Full Name</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                class="w-full px-4 py-3 bg-slate-800 border border-cyan-500 border-opacity-30 rounded-lg text-white focus:border-opacity-100 focus:outline-none transition-all duration-300 placeholder-gray-500"
+                                placeholder="Your name">
+                        </div>
+
+                        <!-- Email Field -->
+                        <div>
+                            <label for="email" class="block text-lg font-semibold mb-2">Email Address</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                class="w-full px-4 py-3 bg-slate-800 border border-cyan-500 border-opacity-30 rounded-lg text-white focus:border-opacity-100 focus:outline-none transition-all duration-300 placeholder-gray-500"
+                                placeholder="your.email@example.com">
+                        </div>
+
+                        <!-- Subject Field -->
+                        <div>
+                            <label for="subject" class="block text-lg font-semibold mb-2">Subject</label>
+                            <select 
+                                id="subject" 
+                                name="subject" 
+                                required
+                                class="w-full px-4 py-3 bg-slate-800 border border-cyan-500 border-opacity-30 rounded-lg text-white focus:border-opacity-100 focus:outline-none transition-all duration-300">
+                                <option value="">Select a subject</option>
+                                <option value="feedback">Product Feedback</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="suggestion">Feature Suggestion</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Message Field -->
+                        <div>
+                            <label for="message" class="block text-lg font-semibold mb-2">Message</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                required
+                                rows="6"
+                                class="w-full px-4 py-3 bg-slate-800 border border-cyan-500 border-opacity-30 rounded-lg text-white focus:border-opacity-100 focus:outline-none transition-all duration-300 placeholder-gray-500 resize-none"
+                                placeholder="Tell us what's on your mind..."></textarea>
+                        </div>
+
+                        <!-- Submit Button -->
+                        <button 
+                            type="submit"
+                            class="w-full px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50 cursor-pointer">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+
+                    <!-- Success Message -->
+                    <div id="success-message" class="hidden mt-6 p-4 bg-green-500 bg-opacity-20 border border-green-500 border-opacity-50 rounded-lg text-green-300">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        Thank you for your message! We'll get back to you soon.
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="mt-20">
+                <h2 class="text-4xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+                
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- FAQ 1 -->
+                    <details class="group bg-slate-900 border border-cyan-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300 fade-in">
+                        <summary class="flex cursor-pointer items-center justify-between p-6 font-bold text-lg hover:bg-slate-800 transition-colors">
+                            <span>Is Veracity AI free to use?</span>
+                            <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="border-t border-cyan-500 border-opacity-20 px-6 py-4 text-gray-300">
+                            <p>Yes! Veracity AI is completely free to use. Our mission is to democratize fact-checking and combat misinformation, so we don't charge users for access.</p>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 2 -->
+                    <details class="group bg-slate-900 border border-cyan-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300 fade-in fade-in-delay-1">
+                        <summary class="flex cursor-pointer items-center justify-between p-6 font-bold text-lg hover:bg-slate-800 transition-colors">
+                            <span>How accurate is the verification?</span>
+                            <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="border-t border-cyan-500 border-opacity-20 px-6 py-4 text-gray-300">
+                            <p>Our AI analyzes multiple factors including source credibility, language patterns, and factual accuracy. While no system is 100% accurate, we strive for high precision. For critical decisions, we recommend verifying important claims through multiple sources.</p>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 3 -->
+                    <details class="group bg-slate-900 border border-cyan-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300 fade-in fade-in-delay-2">
+                        <summary class="flex cursor-pointer items-center justify-between p-6 font-bold text-lg hover:bg-slate-800 transition-colors">
+                            <span>Can I share results from Veracity AI?</span>
+                            <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="border-t border-cyan-500 border-opacity-20 px-6 py-4 text-gray-300">
+                            <p>Absolutely! We encourage users to share Veracity AI results to help fight misinformation. Results can be shared on social media, via messaging, or through email. Help spread verified information!</p>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 4 -->
+                    <details class="group bg-slate-900 border border-cyan-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300 fade-in fade-in-delay-3">
+                        <summary class="flex cursor-pointer items-center justify-between p-6 font-bold text-lg hover:bg-slate-800 transition-colors">
+                            <span>Do you store my data?</span>
+                            <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="border-t border-cyan-500 border-opacity-20 px-6 py-4 text-gray-300">
+                            <p>We take privacy seriously. Your submitted content is analyzed but not permanently stored. We only use it for verification and never share it with third parties. For more details, please check our privacy policy.</p>
+                        </div>
+                    </details>
+
+                    <!-- FAQ 5 -->
+                    <details class="group bg-slate-900 border border-cyan-500 border-opacity-20 rounded-lg hover:border-opacity-50 transition-all duration-300 fade-in fade-in-delay-4">
+                        <summary class="flex cursor-pointer items-center justify-between p-6 font-bold text-lg hover:bg-slate-800 transition-colors">
+                            <span>How can I contribute to Veracity AI?</span>
+                            <i class="fas fa-chevron-down group-open:rotate-180 transition-transform duration-300"></i>
+                        </summary>
+                        <div class="border-t border-cyan-500 border-opacity-20 px-6 py-4 text-gray-300">
+                            <p>We're always looking for passionate individuals! Whether it's development, design, content creation, or spreading awareness, there are many ways to contribute. Contact us at hello@veracity-ai.com to learn more about partnership opportunities.</p>
+                        </div>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-cyan-500 border-opacity-20 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Veracity AI</h4>
+                    <p class="text-gray-400">Fighting misinformation with AI-powered fact checking.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a></li>
+                        <li><a href="verify.html" class="hover:text-cyan-400 transition-colors">Verify News</a></li>
+                        <li><a href="how-it-works.html" class="hover:text-cyan-400 transition-colors">How It Works</a></li>
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="learn.html" class="hover:text-cyan-400 transition-colors">Learn About Misinformation</a></li>
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Veracity AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Contact Form Handler
+        const contactForm = document.getElementById('contact-form');
+        const successMessage = document.getElementById('success-message');
+
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const subject = document.getElementById('subject').value;
+            const message = document.getElementById('message').value;
+
+            // Validate form
+            if (!name || !email || !subject || !message) {
+                alert('Please fill in all fields');
+                return;
+            }
+
+            // Show success message
+            contactForm.style.opacity = '0.5';
+            contactForm.style.pointerEvents = 'none';
+            successMessage.classList.remove('hidden');
+            successMessage.style.animation = 'fadeIn 0.5s ease-in-out';
+
+            // Reset form
+            setTimeout(() => {
+                contactForm.reset();
+                contactForm.style.opacity = '1';
+                contactForm.style.pointerEvents = 'auto';
+            }, 2000);
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                successMessage.classList.add('hidden');
+            }, 5000);
+
+            // Log form data (for demo purposes)
+            console.log('Form submitted:', { name, email, subject, message });
+        });
+    </script>
+</body>
+</html>

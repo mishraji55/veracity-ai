@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Project - Veracity AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-white">
+    <!-- Navigation Bar -->
+    <nav class="sticky top-0 z-50 bg-slate-900 bg-opacity-95 backdrop-blur-md border-b border-cyan-500 border-opacity-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center space-x-2 text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent hover-lift">
+                        <i class="fas fa-shield-alt text-cyan-400"></i>
+                        <span>Veracity AI</span>
+                    </a>
+                </div>
+                <div class="hidden md:flex space-x-1">
+                    <a href="index.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Home</a>
+                    <a href="verify.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Verify News</a>
+                    <a href="how-it-works.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">How It Works</a>
+                    <a href="learn.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Learn</a>
+                    <a href="about.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">About</a>
+                    <a href="contact.html" class="nav-link px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Contact</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-cyan-400 hover:text-cyan-300">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden pb-4">
+                <a href="index.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Home</a>
+                <a href="verify.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Verify News</a>
+                <a href="how-it-works.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">How It Works</a>
+                <a href="learn.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Learn</a>
+                <a href="about.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">About</a>
+                <a href="contact.html" class="block px-3 py-2 rounded-md text-sm font-medium hover:bg-cyan-500 hover:bg-opacity-10 hover:text-cyan-400">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="py-16 px-4 bg-gradient-to-br from-slate-900 to-slate-950">
+        <div class="max-w-4xl mx-auto text-center fade-in">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                About Veracity AI
+            </h1>
+            <p class="text-xl text-gray-300">A hackathon project dedicated to combating misinformation</p>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-20 px-4 bg-slate-950">
+        <div class="max-w-6xl mx-auto">
+            <!-- The Problem Section -->
+            <div class="mb-20 fade-in">
+                <h2 class="text-4xl font-bold mb-8 text-center">The Problem: Misinformation in India</h2>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20">
+                        <div class="text-5xl text-red-400 mb-6 text-center">
+                            <i class="fas fa-exclamation-triangle"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Rapid Spread</h3>
+                        <p class="text-gray-300 text-center">
+                            Misinformation spreads 6X faster than accurate information on social media platforms, reaching millions before fact-checkers can respond.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20">
+                        <div class="text-5xl text-red-400 mb-6 text-center">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Mass Impact</h3>
+                        <p class="text-gray-300 text-center">
+                            India's 750+ million internet users are exposed to false information daily, affecting public health decisions, elections, and social harmony.
+                        </p>
+                    </div>
+
+                    <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20">
+                        <div class="text-5xl text-red-400 mb-6 text-center">
+                            <i class="fas fa-fire"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4 text-center">Real Consequences</h3>
+                        <p class="text-gray-300 text-center">
+                            False medical information endangers lives, while political misinformation destabilizes communities and undermines trust in institutions.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-r from-slate-900 to-slate-800 p-8 rounded-lg border border-red-500 border-opacity-20">
+                    <h3 class="text-2xl font-bold mb-4 text-red-400">Current Challenges:</h3>
+                    <ul class="space-y-3 text-gray-300">
+                        <li class="flex items-start">
+                            <i class="fas fa-cross text-red-400 mr-3 mt-1"></i>
+                            <span><strong>Information Overload:</strong> Millions of pieces of content shared daily make manual verification impossible</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-cross text-red-400 mr-3 mt-1"></i>
+                            <span><strong>Language Barrier:</strong> Most misinformation in India is in Indian languages, which traditional fact-checkers struggle to cover</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-cross text-red-400 mr-3 mt-1"></i>
+                            <span><strong>Media Literacy Gap:</strong> Many citizens lack tools and knowledge to verify information independently</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-cross text-red-400 mr-3 mt-1"></i>
+                            <span><strong>Cost of Fact-Checking:</strong> Professional fact-checking is expensive and only covers a fraction of false claims</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Our Mission -->
+            <div class="mb-20 fade-in">
+                <h2 class="text-4xl font-bold mb-12 text-center">Our Mission</h2>
+                
+                <div class="bg-gradient-to-r from-cyan-500 to-blue-500 bg-opacity-10 border border-cyan-500 border-opacity-30 rounded-lg p-12 text-center mb-12">
+                    <p class="text-2xl font-bold text-cyan-400 italic mb-4">
+                        "To empower every citizen with AI-powered tools to verify information and make informed decisions in India."
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 hover-lift">
+                        <div class="text-4xl text-cyan-400 mb-4">
+                            <i class="fas fa-target"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Our Goals</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                                <span>Provide instant credibility analysis for news and content</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                                <span>Identify and flag specific misinformation tactics</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                                <span>Educate users about misinformation and media literacy</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                                <span>Make fact-checking accessible to everyone for free</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-slate-900 p-8 rounded-lg border border-cyan-500 border-opacity-20 hover:border-opacity-50 transition-all duration-300 hover-lift">
+                        <div class="text-4xl text-cyan-400 mb-4">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold mb-4">Future Vision</h3>
+                        <ul class="space-y-3 text-gray-300">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                                <span>Multi-language support for all Indian languages</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                                <span>Mobile app for easy access on smartphones</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                                <span>Integration with social media platforms</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-cyan-400 mr-3 mt-1"></i>
+                                <span>Real-time misinformation tracking and reporting</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hackathon Project -->
+            <div class="mb-20 fade-in">
+                <h2 class="text-4xl font-bold mb-12 text-center">Hackathon Project Details</h2>
+                
+                <div class="bg-slate-900 p-12 rounded-lg border border-cyan-500 border-opacity-20">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-cyan-400">Project Information</h3>
+                            <ul class="space-y-4">
+                                <li class="flex items-start">
+                                    <i class="fas fa-trophy text-yellow-400 mr-4 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold">Category:</p>
+                                        <p class="text-gray-300">Social Impact / AI for Good</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-tools text-cyan-400 mr-4 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold">Tech Stack:</p>
+                                        <p class="text-gray-300">HTML5, CSS3 (Tailwind), Vanilla JavaScript</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-rocket text-blue-400 mr-4 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold">Development Time:</p>
+                                        <p class="text-gray-300">Hackathon duration (Intensive)</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-users text-purple-400 mr-4 mt-1"></i>
+                                    <div>
+                                        <p class="font-bold">Team Size:</p>
+                                        <p class="text-gray-300">Multi-disciplinary team of innovators</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-cyan-400">Key Features Implemented</h3>
+                            <ul class="space-y-3 text-gray-300">
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-yellow-400 mr-3 mt-1"></i>
+                                    <span>Multi-page website with smooth navigation</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-yellow-400 mr-3 mt-1"></i>
+                                    <span>Interactive content verification tool</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-yellow-400 mr-3 mt-1"></i>
+                                    <span>Educational content on misinformation types</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-yellow-400 mr-3 mt-1"></i>
+                                    <span>Responsive design for mobile and desktop</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-yellow-400 mr-3 mt-1"></i>
+                                    <span>Modern UI/UX with smooth animations</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-star text-yellow-400 mr-3 mt-1"></i>
+                                    <span>Mock AI analysis simulation</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Why We Built This -->
+            <div class="fade-in">
+                <h2 class="text-4xl font-bold mb-12 text-center">Why We Built Veracity AI</h2>
+                
+                <div class="bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 p-12 rounded-lg border border-cyan-500 border-opacity-20">
+                    <p class="text-gray-300 leading-relaxed mb-8">
+                        During this hackathon, we realized that the fight against misinformation requires accessible, intelligent tools that empower ordinary citizens. While AI and fact-checking technology exist, they're often:
+                    </p>
+                    
+                    <div class="grid md:grid-cols-2 gap-8 mb-8">
+                        <div>
+                            <h4 class="font-bold text-red-400 mb-2"><i class="fas fa-lock mr-2"></i>Behind paywalls</h4>
+                            <p class="text-gray-300 text-sm">Professional fact-checking services are expensive and inaccessible to many</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-red-400 mb-2"><i class="fas fa-language mr-2"></i>Limited to English</h4>
+                            <p class="text-gray-300 text-sm">Most tools don't support Indian languages where misinformation thrives</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-red-400 mb-2"><i class="fas fa-user-slash mr-2"></i>Not user-friendly</h4>
+                            <p class="text-gray-300 text-sm">Complex interfaces make them difficult for average users to navigate</p>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-red-400 mb-2"><i class="fas fa-globe mr-2"></i>Geographically limited</h4>
+                            <p class="text-gray-300 text-sm">Most fact-checking coverage focuses on Western countries</p>
+                        </div>
+                    </div>
+
+                    <p class="text-gray-300 leading-relaxed">
+                        <span class="text-cyan-400 font-bold">Veracity AI was born from the belief that misinformation is a universal problem that needs a universal solution.</span> We've created a demo that shows how AI can be democratized to help everyone verify information, understand misinformation tactics, and become more informed citizens.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 px-4 bg-slate-900">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-8">Join Us in Fighting Misinformation</h2>
+            <p class="text-gray-300 text-lg mb-12">Whether you want to verify news, learn about misinformation, or support our mission, there's a place for you.</p>
+            <div class="space-y-4 md:space-y-0 md:space-x-4">
+                <a href="verify.html" class="inline-block px-8 py-3 bg-gradient-to-r from-cyan-500 to-blue-500 text-white font-bold rounded-lg transition-all duration-300 hover:scale-105 hover:shadow-lg hover:shadow-cyan-500/50">
+                    <i class="fas fa-check-circle mr-2"></i>Start Verifying
+                </a>
+                <a href="contact.html" class="inline-block px-8 py-3 border-2 border-cyan-500 text-cyan-400 font-bold rounded-lg transition-all duration-300 hover:bg-cyan-500 hover:bg-opacity-10">
+                    <i class="fas fa-envelope mr-2"></i>Get in Touch
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-cyan-500 border-opacity-20 py-12 px-4">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Veracity AI</h4>
+                    <p class="text-gray-400">Fighting misinformation with AI-powered fact checking.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="index.html" class="hover:text-cyan-400 transition-colors">Home</a></li>
+                        <li><a href="verify.html" class="hover:text-cyan-400 transition-colors">Verify News</a></li>
+                        <li><a href="how-it-works.html" class="hover:text-cyan-400 transition-colors">How It Works</a></li>
+                        <li><a href="about.html" class="hover:text-cyan-400 transition-colors">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="learn.html" class="hover:text-cyan-400 transition-colors">Learn About Misinformation</a></li>
+                        <li><a href="contact.html" class="hover:text-cyan-400 transition-colors">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors text-xl"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 Veracity AI. All rights reserved. Built with passion for a more informed world.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
