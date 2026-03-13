@@ -30,34 +30,6 @@ veracity-ai/
 ├── script.js               # Shared JavaScript functionality
 └── README.md               # This file
 ```
-
-## 🚀 Quick Start
-
-### Option 1: Open in Browser
-1. Navigate to the project folder
-2. Right-click on `index.html`
-3. Select "Open with" → Your preferred browser
-
-### Option 2: Using Live Server
-If you have VS Code:
-1. Install the "Live Server" extension
-2. Right-click on `index.html`
-3. Select "Open with Live Server"
-
-### Option 3: Local Server
-```bash
-# Python 3
-python -m http.server 8000
-
-# Python 2
-python -m SimpleHTTPServer 8000
-
-# Node.js (with http-server package)
-npx http-server
-```
-
-Then open `http://localhost:8000` in your browser.
-
 ## 📄 Page Descriptions
 
 ### 1. **Home Page** (`index.html`)
